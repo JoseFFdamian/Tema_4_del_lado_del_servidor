@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tema 3. Programacion del lado del cliente - CRUD</title> 
+        <link rel="stylesheet" href="estilo.css"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"
+    </head>
+    <body>
+        <h1>Registro de Venta - JugueteriaToy</h1>
+        <table>
+            <tr>
+                <td>
+                    <form id="formvent" autocomplete="off" onsubmit="onFormSubmit()">
+                        <div>
+                            <label for="Id_producto">Id_producto:</label>
+                            <input type="number" name="Id_producto" id="Id_producto">
+                        </div>
+
+                        <div>
+                            <label for="nombre_producto">Nombre del producto:</label>
+                            <input type="text" name="nombre_producto" id="nombre_producto">
+                        </div>
+
+                        <div>
+                            <label for="existencia">Existencia:</label>
+                            <input type="text" name="existencia" id="existencia">
+                        </div>
+
+                        <div>
+                            <label for="precio">Precio:</label>
+                            <input type="number" name="precio" id="precio">
+                        </div>
+
+                        <div class="form_action--button">
+                            <input type="submit"  value="registrar" >
+                            <input type="reset"  value="reiniciar">
+                        </div>
+                    </form>
+
+                    <td>
+                        <table class="list" id="jugue_list">
+                            <thead>
+                                <tr>
+                                    <th>Id_producto</th>
+                                    <th>Nombre del producto</th>
+                                    <th>Existencia</th>
+                                    <th>Precio</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="tbody">
+
+                            </tbody>
+
+                        </table>
+
+                    </td>
+
+                </td>
+            </tr>
+        </table>
+        <script type="text/javascript" src="app.js"></script>
+    </body>
+</html>

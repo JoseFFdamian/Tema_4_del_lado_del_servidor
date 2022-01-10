@@ -1,0 +1,78 @@
+body h1{
+    text-align: center;
+    color: #F633FF;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 8px;
+    padding: 2rem;
+    padding-bottom: 3rem;
+}
+
+body{
+    height: 400px;
+    background-image: url(../CRUD-19470195/Imagenes/jugueteria.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+table{
+    width: 80%;
+    margin: 20px auto;
+    background: rgb(124, 154, 167);
+}
+table.lista{
+    text-align: center;
+    width: 100%;
+}
+
+td{
+    border: 1px solid rgb(204, 200, 200);
+}
+
+tr:nth-child(even), table.list thead> tr{
+    background-color: rgb(204, 200, 200);
+}
+
+input[type="text"], input[type="number"]
+{
+    width: 91%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb 165,161,161;
+    border-radius: 4px;
+}
+input[type="submit"],input[type="reset"]{
+    background: #eee;
+    padding: 10px 50px;
+    margin: 15px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover{
+    background: #F633FF;
+}
+input[type="reset"]:hover{
+    background: #F633FF;
+}
+button{
+    background: #eee;
+    padding: 10px 50px;
+    margin: 15px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+button:hover{
+    background: #F633FF;
+}
